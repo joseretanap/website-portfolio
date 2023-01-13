@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#first-part {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("img/background.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+#first-part .content header {
+    background-color: rgba(0, 0, 0, .8);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+}
+
+#first-part .content header .content-header {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#first-part .content header .content-header h1 {
+    text-align: center;
+    color: #58c64f;
+}
+
+#first-part .content header .content-header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+#first-part .content header .content-header nav ul li a {
+    text-decoration: none;
+    color: white;
+    margin: 0 12px;
+    font-weight: 400;
+    transition: .5s;
+}
+
+#first-part .content header .content-header nav ul li a:hover {
+    color: #58c64f;
+}
+
+#first-part .content header .content-header .social-medias a{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    margin-left: 10px;
+    transition: .5s;
+}
+
+#first-part .content header .content-header .social-medias a:hover {
+    color: #58c64f;
+}
+
+#first-part .content .presentation {
+    max-width: 1100px;
+    height: 100vh;
+    margin: auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#first-part .content .presentation .welcome {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+#first-part .content .presentation h2 {
+    font-size: 55px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+#first-part .content .presentation .description {
+    max-width: 700px;
+    margin: 25px auto;
+    font-size: 18px;
+    text-align: center;
+}
+
+#first-part .content .presentation a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 25px;
+    padding: 20px 25px;
+    border: 2px solid white;
+    border-radius: 50px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+#first-part .content .presentation a:hover {
+    background-color: #58c64f;
+}
+
+#icon-nav {
+    color: white;
+    display: none;
+}
+
+/*Section about me*/
+
+#aboutMe {
+    max-width: 1100px;
+    margin: auto;
+    padding: 100px 15px;
+    color: #111135;
+    display: flex;
+}
+
+#aboutMe .container-photo {
+    max-width: 400px;
+    margin-right: 80px;
+}
+
+#aboutMe .container-photo img {
+    padding: 20px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: #f3f3f3;
+}
+
+#aboutMe .aboutMe {
+    margin: 0 40px;
+}
+
+#aboutMe .aboutMe .title-aboutMe {
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+
+#aboutMe .aboutMe h2 {
+    font-size: 34px;
+    font-weight: bold;
+    margin: 20px 0;
+    letter-spacing: 2px;
+}
+
+#aboutMe .aboutMe h2 span {
+    color: #58c64f;
+}
+
+#aboutMe .aboutMe h3 {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+#aboutMe .aboutMe p {
+    font-size: 14px;
+    line-height: 25px;
+    color: #565656;
+    margin-bottom: 12px;
+}
+
+#aboutMe .aboutMe a {
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    border-radius: 30px;
+    padding: 10px 20px;
+    border: 1px solid #000;
+    margin-top: 30px;
+    transition: .5s;
+}
+
+#aboutMe .aboutMe a:hover {
+    background-color: #58c64f;
+    color: white;
+}
+
+/*Section services*/
+
+#services {
+    padding: 100px 15px;
+    text-align: center;
+    background-color: #f3f3f3;
+}
+
+#services .title-section {
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+
+#services .row {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 30px auto; 
+}
+
+#services .row .services {
+    max-width: 350px;
+    background-color: white;
+    padding: 30px;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+#services .row .services:hover {
+    box-shadow: 5px 5px 10px #565656, -5px -5px 10px #8a8a8a;
+}
+
+#services .row .services h4 {
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+#services .row .services .icon {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-bottom: 50%;
+    background-color: #d3d3d3;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+#services .row .services hr {
+    width: 30%;
+    margin: auto;
+    color: #000;
+    margin-bottom: 25px;
+}
+
+#services .row .services ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#services .row .services p {
+    font-size: 14px;
+    line-height: 22px;
+}
